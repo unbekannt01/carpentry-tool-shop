@@ -1,0 +1,78 @@
+/* Import fonts or add any global styling you need */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.admin-container {
+  display: flex;
+  background-color: #f0f0f0; /* Set your desired background color */
+  color: #202020;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+#sidebar {
+  background: #C4A484; /* White background for sidebar */
+  width: 300px;
+  transition: all 0.3s ease;
+  display: fixed;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px 3px #222; /* Shadow for sidebar */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#sidebar .title {
+  line-height: 65px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  border-bottom: 1px solid #222;
+  width: 100%;
+}
+
+#sidebar .list-items {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#sidebar .list-items li {
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+#sidebar .list-items li:hover {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0px 10px 3px #222;
+}
+
+#sidebar .list-items li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+
+#sidebar .list-items li a:hover {
+  color: black;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  /* box-shadow: 0 0px 10px 3px #222; Add shadow to the content */
+  /* text-align: center; */
+  
+}
